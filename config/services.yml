@@ -1,0 +1,5 @@
+services:
+  s9e.nolimits.listener:
+    class: s9e\nolimits\listener
+    tags:
+      - { name: event.listener }

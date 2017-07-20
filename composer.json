@@ -1,0 +1,19 @@
+{
+	"name": "s9e/nolimits",
+	"type": "phpbb-extension",
+	"description": "Removes most limits related to markup.",
+	"homepage": "https://github.com/s9e/phpbb-ext-nolimits/",
+	"version": "1.0.0",
+	"keywords": ["phpbb"],
+	"license": "MIT",
+	"require": {
+		"php": ">=5.4.0"
+	},
+	"authors": [{ "name": "JoshyPHP" }],
+	"extra": {
+		"display-name": "s9e/nolimits",
+		"soft-require": {
+			"phpbb/phpbb": "3.2.*"
+		}
+	}
+}
