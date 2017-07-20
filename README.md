@@ -4,4 +4,8 @@ Note that removing those limits may allow malicious users to exhaust your server
 
 ### How to install
 
-Download [the latest release](https://github.com/s9e/phpbb-ext-nolimits/releases/download/1.0/nolimits.zip) and unzip in the phpBB/ext directory of your forum. Then go to the ACP and enable the extension.
+Download [the latest release](https://github.com/s9e/phpbb-ext-nolimits/releases/download/1.0.0/nolimits.zip) and unzip in the phpBB/ext directory of your forum. Then go to the ACP and enable the extension.
+
+### Support
+
+No support is provided for this extension.
