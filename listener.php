@@ -13,7 +13,10 @@ class listener implements EventSubscriberInterface
 {
 	public static function getSubscribedEvents()
 	{
-		return ['core.text_formatter_s9e_configure_after' => 'onConfigure'];
+		return [
+			'core.text_formatter_s9e_configure_after' => 'onConfigure',
+			'core.text_formatter_s9e_parser_setup'    => 'onParserSetup'
+		];
 	}
 
 	public function onConfigure($event)
@@ -27,5 +30,10 @@ class listener implements EventSubscriberInterface
 		{
 			$plugin->setRegexpLimit(PHP_INT_MAX);
 		}
+	}
+
+	public function onParserSetup($event)
+	{
+		$event['parser']->get_parser()->maxFixingCost = PHP_INT_MAX;
 	}
 }
